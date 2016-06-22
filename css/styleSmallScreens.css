@@ -1,0 +1,613 @@
+	[ng\:cloak],
+	[ng-cloak],
+	[data-ng-cloak],
+	[x-ng-cloak],
+	.ng-cloak,
+	.x-ng-cloak,
+	.ng-hide {
+		display: none !important;
+	}
+
+	ng\:form {
+		display: block;
+	}
+
+	.ng-hide-add-active,
+	.ng-hide-remove {
+		display: block!important;
+	}
+/*	body {
+		background-color: #000;
+		margin: 0px;
+		overflow: hidden;
+	}*/
+
+	canvas {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -9999;
+	}
+
+	.gems-list {
+		text-align: center;
+		margin-left: 10%;
+		margin-right: auto;
+		width: 60%;
+		margin-top: 5%;
+		border: 2px solid #FF8C00;
+	}
+
+	.red {
+		background-color: #FF8C00!important;
+		color: black!important;
+		font-size: 24px!important;
+		opacity: 1 !important;
+	}
+
+	.gems-list .gem {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 25px;
+		position:relative;
+		color:white;
+		font-size: 16px;
+		opacity:0.7;
+		font-weight:bold;
+		background-color: black;
+	}
+	
+	.animate.ng-enter {
+		transition: 1s linear all;
+		transition-delay: 1s;
+		opacity: 0;
+	}
+
+	.animate.ng-enter-stagger {
+		transition-delay: 0.1s;
+		transition-duration: 0s;
+	}
+
+	.animate.ng-enter.ng-enter-active {
+		opacity: 1;
+	}
+
+	.repTemplate {
+		background-color: black;
+		position: fixed;
+		left: 1050px;
+		top:225px;
+		padding: 15px;
+		width: 360px;
+		height:500px;
+		border: 1px solid #FF8C00;
+	}
+
+	.repTemplate.ng-enter{
+		transition:opacity 8.0s ease-in-out;
+
+	}
+	.repTemplate.ng-enter.ng-enter-active {
+		opacity: 0;
+	}
+	.boxed img {
+		margin:auto;
+		width: 300px;
+		height: 300px;
+	}
+
+	.popovertext {
+		font-style: italic;
+		font-variant: normal;
+		line-height: 52px;
+		font-size: 20px;
+		color: white;
+	}
+	.popovertext p{
+		font-size: 20px;
+		color:white;
+	}
+	.popovertext img{
+		height :60px; 
+		width: 60px;
+	}
+	.tableAnimation.move {
+		transition-property: left, width;
+		transition-duration: 3s, 5s;
+		left: 200px;
+	}
+
+	.tableAnimation.move.width {
+		transition-property: width, left;
+		transition-duration: 3s, 5s;
+		width: 1000px;
+	}
+	.fadeInLeft {
+		animation-name: fadeInLeft;    
+	}
+	h1 {
+		position: relative;
+		line-height: 2em;
+		height: 2em;
+		width: 80%;
+		padding: 0;
+		margin: 1em auto auto;
+		color: white;
+		font-size: 52px;
+		font-style: normal;
+		font-variant: normal;
+		border: 2px solid #FF8C00;
+		text-align: center;
+	}
+	h1:before{
+		z-index: -1;
+		content: "";
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.7;
+		color: white;
+		margin: 0;
+		line-height: 63px;
+		background-color: black;
+	}
+
+	.element {
+		width: 120px;
+		height: 160px;
+		box-shadow: 0px 0px 12px rgba(0,0,255,0.5);
+		border: 1px solid rgba(127,0,255,0.25);
+		text-align: center;
+		cursor: default;
+	}
+
+	.element .symbol {
+		position: absolute;
+		top: 40px;
+		left: 0px;
+		right: 0px;
+		font-size: 60px;
+		font-weight: bold;
+		color: rgba(255,255,255,0.75);
+		text-shadow: 0 0 10px rgba(0,255,255,0.95);
+	}
+
+	.thirdPage{
+		background-image: url('http://www.saveblackwater.org/images/20070925-_MG_9195.gif');
+		background-repeat: no-repeat;
+		background-size: 120% 120%;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	
+	#bgThirdPage{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -9999;
+
+	}
+	
+	.cardTemplate {
+		margin:  5em auto auto auto;
+		padding: 15px;
+		width: 450px;
+		height:535px;
+		border: 5px solid #FF8C00;	
+		color: white;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+
+	.cardText{
+		display: block;
+		margin: auto;
+		text-align: center;
+		line-height: 20px;
+		font-size: 20px;
+		z-index: 1!important;
+
+	}
+	div.badges{
+		height:auto;
+		width:auto;
+		float:left;
+		text-align:center;
+	}
+	div.badges img {
+		display: inline;
+		padding: 15px;
+		margin-left: 25px;	
+		height: 105px;
+		width: 105px;
+	}
+
+	.my-switch-animation.ng-enter,
+	.my-switch-animation.ng-leave {
+		transition:3.0s ease all;
+		position: absolute;
+	}
+
+	.my-switch-animation.ng-enter {
+		left:100%;
+	}
+
+	.my-switch-animation.ng-enter.ng-enter-active {
+		left:38.4%;
+	}
+
+	.my-switch-animation.ng-enter.ng-enter-stagger,
+	.my-switch-animation.ng-leave.ng-leave-stagger
+	{
+
+		-webkit-transition-delay:2s;
+		transition-delay:2s;
+
+	}
+	.my-switch-animation.ng-leave{
+		left:38.4%;
+		transition-delay:1s;
+
+	}
+	.my-switch-animation.ng-leave.ng-leave-active {
+		left:-100%;
+	}
+
+   .pageFour {
+        /*background-color: #000000;*/
+        background: url('http://www.wallpaperup.com/uploads/wallpapers/2014/09/18/446524/0208350688505854b2bcb98b02497e4b.jpg') no-repeat center center fixed;
+        background-size: cover;
+	    margin: 0;
+	    padding: 0;
+	    height: 100%!important;
+	    width: 100%!important;
+        overflow: hidden;
+        position: fixed;
+        background-repeat: no-repeat;
+	}
+
+    .countdown{
+        margin-left: 12%;
+    }
+    .timerbox {
+        display: inline-block;
+        width: 220px;
+        height: 200px;
+        margin-left: 40px;
+        margin-top: 50px;
+        box-shadow: 0px 0px 12px rgba(0,255,255,0.9);
+        border: 1px solid rgba(127,255,255,0.25);
+        text-align: center;
+        cursor: default;
+        background-color: rgba(0,0,0,0.7);
+        border: 1px dashed #FF8C00;
+        padding: 40px;
+    }
+   .timerbox .time {
+        position: relative;
+        overflow: hidden;
+        left: 0px;
+        right: 0px;
+        font-size: 60px;
+        color: rgba(255,255,255,1);
+        text-shadow: 0 0 10px rgba(0,255,255,0.95);
+        opacity: 1!important;
+    }
+   #statictimerText{
+	    position: relative;
+	    overflow: hidden;
+	    left: 0px;
+	    right: 0px;
+	    font-size: 40px;
+	    color: rgba(255,255,255,1);
+	    text-shadow: 0 0 10px rgba(0,255,255,0.95);
+	    opacity: 1!important;
+	}
+    #fourthpageHeader{
+        border: 2px solid #FF8C00;
+        padding: 0;
+        width: 70%;
+        margin: 1em auto auto;
+        height: 2em;
+        text-align: center;
+        line-height: 2em;
+        background-color: rgba(0,0,0,0);
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 60px;
+        margin-top: 40px;
+    }
+    .rewards{
+        border: 2px solid #FF8C00;
+        height: 300px;
+        width: 1100px;
+        margin-left: 12%;
+        margin-top: 5%;
+        background: black;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 2!important;
+    }
+    .rewards p{
+        display: inline-block;
+        margin-left: 10%;                
+        margin-top: 3%;
+        width: 20%;
+        text-align: center;
+        background: #FF8C00;
+        color: black;
+        font-size: 30px; 
+
+    }
+   .rewards .imageFiles{
+        display: inline-block;
+        position: relative;
+        width: 20%;
+        height:50%; 
+        margin-left: 10%;
+        margin-top: 3%;
+        color: white;
+    }
+    .reward1{
+        background: url('../resources/rewards/applewatchpress.png') ;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .reward2{
+        background: url('../resources/rewards/amazon200.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .reward3{
+        background: url('../resources/rewards/amazon50.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+   #bottomDivHeading {
+        margin-top: -2%;
+        width: 15%;
+        text-align: center;
+        background: #FF8C00;
+        color: black;
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+
+    .leaders{
+    	border: 2px solid #FF8C00;
+        height: 300px;
+        width: 1100px;
+        margin-left: 12%;
+        margin-top: 5%;
+        background: black;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 2!important;
+    }
+    .leaders .imageFiles{
+        display: inline-block;
+        position: relative;
+        width: 20%;
+        height:50%; 
+        margin-left: 10%;
+        margin-top: 2%;
+        color: white;
+    }
+
+    .imageFiles img{
+    	height: 180px;
+        width: 180px;
+    }
+
+    .leaders p{
+        display: inline-block;
+        margin-top: 5%;
+        margin-left: 15%;
+        width: 8%;
+        text-align: center;
+        background: #FF8C00;
+        color: black;
+        font-size: 30px; 
+        border-radius: 50%;
+    }
+
+    #position2{
+    	margin-left: 23%;
+
+    }
+    #position3{
+    	margin-left: 22%;
+    }
+    .bounceInDown {
+        animation-name: bounceInDown;
+        animation-delay:1s;
+    }
+
+    .flash {
+	    animation-name: flash;
+	    animation-delay:4s;
+	    animation-duration:2s;
+    }
+
+    .zoomInDown.ng-enter {
+ 		 animation-name: zoomInDown;
+ 		 animation-duration:3s;
+	}
+
+	.zoomIn{
+		animation-delay:0.8s;
+		animation-duration:4s;
+	}
+
+	.fifthPage{
+		background-image: url('../resources/backgrounds/fifthPage.jpg');
+    	background-color: black;
+    	background-size: cover;
+	    margin: 0;
+	    padding: 0;
+	    height: 100%!important;
+	    width: 100%!important;
+        overflow: hidden;
+        position: fixed;
+    }
+
+    #fifthPageHeader{
+    	border: 2px solid #FF8C00;
+        padding: 0;
+        width: 80%;
+        margin: 1em auto auto;
+        height: 2em;
+        text-align: center;
+        line-height: 2em;
+        background-color: rgba(0,0,0,0.5);
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 60px;
+        margin-top: 50px;
+        color:white;
+    }
+
+
+    .progressGraph{
+    	width:70%;
+    	height:75%;
+    	margin:  5em auto auto auto;
+		padding: 15px;
+		border: 5px solid #FF8C00;	
+		color: white;
+		background-color: rgba(0, 0, 0, 0.6);
+    }
+
+
+    .progress{
+    	width:70%!important;
+    	display: inline-block;
+    	margin-left: 8%;
+    	margin-top: 2%;
+    	height:60px!important;
+    }
+
+    .imgTile{
+    	width: 100%;
+    	height:25%;
+    	display: inline-block;
+    	margin-left: 2%;
+    	margin-top: 0.8%;
+    }
+
+    .garphText{
+    	color: white;
+    	height: 100%;
+    	width:100%;
+    }
+
+    .barText{
+    	text-align: center;
+    	font-size: 25px;
+    	margin: 18px!important;
+    	display: inline-block;
+    	color:black;
+    	font-weight: bold;
+    }
+    .imgWrapper img{
+    	vertical-align: top;
+    	text-align: center;
+    }
+    .caption {
+	    display: none;
+	    color: white;
+	    font-size: 20px;
+	}
+
+	div.imgWrapper{
+		vertical-align: top;
+    	display: inline-block;
+    	text-align: center;
+	}
+	#fifthPageBadge{
+		vertical-align: middle;
+	    position: absolute;
+	    margin-left: inherit;
+	    margin-top: 1.9%;
+	}
+
+	.sixthPage{
+
+		background: url('http://wallpaper-download.net/wallpapers/random-wallpapers-black-and-blue-background-wallpaper-31784.jpg') no-repeat center center fixed;
+    	background-size: cover;
+	    margin: 0;
+	    padding: 0;
+	    height: 100%!important;
+	    width: 100%!important;
+        overflow: hidden;
+        position: fixed;
+        display: inline-block;
+    }
+    .imageBox{
+    	margin:  6em auto auto auto;
+		padding: 15px;
+		width: 450px;
+		height:635px;
+		border: 5px ridge #FF8C00;	
+		color: white;
+		background-color: rgba(211, 211, 211, 0.2);
+    }
+    .imageBox img{
+	    width:100%;
+		height:100%;
+		padding: 5px;
+
+    }
+    .winnerName{
+    		color: white;
+    		background-color: rgba(211, 211, 211, 0.3);
+    		border: 2px solid #FF8C00;	
+    		width: 28%;
+    		height:40%!important;
+    		text-align: center;
+    		margin:  0 auto auto 20px;
+    		font-weight: bold;
+    		margin-top: -30%!important;
+    		margin-left: 5%;
+    }
+    .zoomInRight{
+    	animation-delay:2s;
+    	animation-duration:4s;
+    }
+
+    .flip{
+    	animation-duration:3s;
+    }
+
+    #sixthPageHeader{
+    	width: 60%;
+    	background-color: rgba(211, 211, 211, 0.3);
+    }
+
+    .imageBox .moveDivRight{
+ 		margin:  6em auto auto 55%;
+    }
+
+    .sixthPage.changeScreen{
+    	background: url('http://33.media.tumblr.com/b878fcb8c5af989d16f884ab3ae5b2a2/tumblr_inline_n85cbndKVM1ssrw4d.gif');
+    	background-size: contain;
+	    margin: 0;
+	    padding: 0;
+	    height: 100%!important;
+	    width: 100%!important;
+        overflow: hidden;
+        position: fixed;
+
+    }
+    .flipInX{
+    	animation-duration:4s;
+    }

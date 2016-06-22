@@ -1,0 +1,83 @@
+<div ng-controller="thirdPageCtrl" class="thirdPage">
+<h1 class="animated fadeInLeft">Score Card</h1>
+
+<div ng-switch on="detailsBlock">
+
+    <div ng-switch-when="1" class="my-switch-animation">
+        <div class="cardTemplate ng-cloak">
+            <div class="cardText">
+                <div class="boxed"><img ng-src="{{gems[0].images}}" />
+                </div>
+                <h2>{{gems[0].name ||'Undefined' }}</h2>
+                <div><b>Current Rank : 1</b></div>
+                <div ><b>Total Score: 250 points</b></div>
+
+
+                <div class="badges">     
+                    <img ng-src="resources/examplePage/medal11-512.png">
+                </div>
+
+                <div class="badges">     
+                    <img ng-src="resources/thirdPage/3.png">
+                </div>
+
+                <div class="badges">     
+                    <img ng-src="resources/thirdPage/4.png">
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+
+    <div ng-switch-when="2" class="my-switch-animation">
+        <div class="cardTemplate ng-cloak">
+            <div class="cardText">
+                <div class="boxed"><img ng-src="{{gems[1].images}}" />
+                </div>
+                <h2>{{gems[1].name ||'Undefined' }}</h2>
+                <div><b>Current Rank : 2</b></div>
+                <div ><b>Total Score: 250 points</b></div>
+                
+                <div class="badges">     
+                    <img ng-src="resources/examplePage/star1-512.png">
+                </div>
+
+                <div class="badges">     
+                    <img ng-src="resources/thirdPage/1.png">
+                </div>
+
+                <div class="badges">     
+                    <img ng-src="resources/thirdPage/2.png">
+                </div>
+
+            </div> 
+        </div> 
+    </div>
+
+    <div ng-switch-when="3" class="my-switch-animation">
+        <div class="cardTemplate ng-cloak">
+            <div class="cardText">
+                <div class="boxed"><img ng-src="{{gems[2].images}}" />
+                </div>
+                <h2>{{gems[2].name ||'Undefined' }}</h2>
+                <div><b>Current Rank : 3</b></div>
+                <div ><b>Total Score: 250 points</b></div>
+                
+                <div class="badges">     
+                    <img ng-src="resources/examplePage/badge3-512.png">
+                </div>
+
+                <div class="badges">     
+                    <img ng-src="resources/thirdPage/5.png">
+                </div>
+
+                <div class="badges">     
+                    <img ng-src="resources/thirdPage/6.png">
+                </div>
+            </div>                        
+        </div>
+    </div>
+    
+</div>
+</div>
+    

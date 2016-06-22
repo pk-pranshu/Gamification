@@ -1,0 +1,49 @@
+<div ng-controller="fifthPageCtrl" class="fifthPage">
+    <h3 class="animated fadeInLeft" id="fifthPageHeader">Progress Report</h3>
+    <div class="progressGraph animated zoomIn ng-cloak">
+        <div class="garphText">
+            <div class="imgTile">
+                <div class="imgWrapper">
+                    <img ng-src="{{gems[0].images}}" height="130" width="130" /><span class="caption">{{gems[0].name}}</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: {{width1}}%">
+                        <p class="barText">{{gems[0].score}} Complete </p>
+                    </div>
+                </div>
+                <img id="fifthPageBadge" src="resources/examplePage/medal11-512.png" height="60" weight="60">
+            </div>
+            <div class="imgTile">
+                <div class="imgWrapper">
+                    <img ng-src="{{gems[1].images}}" height="130" width="130" /><span class="caption">{{gems[1].name}}</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: {{width2}}%">
+                        <p class="barText"> {{gems[1].score}} Complete </p>
+                    </div>
+                </div>
+                <img id="fifthPageBadge" src="resources/examplePage/star1-512.png" height="60" weight="60">
+            </div>
+            <div class="imgTile">
+                <div class="imgWrapper">
+                    <img ng-src="{{gems[2].images}}" height="130" width="130" /><span class="caption">{{gems[2].name}}</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: {{width3}}%">
+                        <p class="barText">{{gems[2].score}} Complete</p>
+                    </div>
+                </div>
+                <img id="fifthPageBadge" src="resources/examplePage/badge3-512.png" height="60" weight="60"> 
+            </div>
+            <div class="imgTile">
+                <div class="imgWrapper">
+                    <img ng-src="{{gems[3].images}}" height="130" width="130" /><span class="caption">{{gems[3].name}}</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: {{width4}}%">
+                        <p class="barText">{{gems[3].score}} Complete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

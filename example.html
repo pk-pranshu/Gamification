@@ -1,0 +1,13 @@
+<div class="repTemplate" ng-if="item.selected">
+    <div class="boxed"><img ng-src="{{item.images}}" /></div>
+    <div>
+        <div class="popovertext">
+            <p>My name is {{item.name ||'undefined' }}</p>
+            <div><b>Current Rank = {{$index +1}}</b></div>
+              <div><b>Score: {{item.score}}</b></div>
+            <img ng-if="$index===0" ng-src="resources/examplePage/medal11-512.png" no-repeat center>
+            <img ng-if="$index===1" ng-src="resources/examplePage/star1-512.png" no-repeat center >
+            <img ng-if="$index===2" ng-src="resources/examplePage/badge3-512.png" no-repeat center>
+        </div>
+    </div>
+</div>

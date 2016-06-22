@@ -1,0 +1,50 @@
+<div ng-controller="fourthPageCtrl" class="pageFour">
+    <h1 id= "fourthpageHeader" class="animated fadeInLeft">Countdown To next Goal</h1>
+        <div class="countdown ">
+                <div class="timerbox">
+                        <div class="time  animated bounceInDown " id="countid1"></div><p id="statictimerText">Days</p>
+                </div> 
+                <div class="timerbox">
+                        <div class="time  animated bounceInDown " id="countid2"></div><p id="statictimerText">hrs</p> 
+                </div>
+                <div class="timerbox">
+                        <div class="time  animated bounceInDown " id="countid3"></div><p id="statictimerText">mins</p>
+                </div> 
+                <div class="timerbox">
+                        <div class="time  animated bounceInDown  " id="countid4"></div><p id="statictimerText">sec</p>
+                </div>
+        </div>
+        
+        <div ng-switch on="bottomDiv">
+
+            <div ng-switch-when="1" class="animated zoomInDown rewards">
+                <h2 id="bottomDivHeading"> Rewards </h2>
+                    <div class="animated flash imageFiles reward1"></div>
+                    <div class="animated flash imageFiles reward2"></div>
+                    <div class="animated flash imageFiles reward3"></div>
+                    <div>
+                        <p>1st Prize</p>
+                        <p>2nd Prize</p>
+                        <p>3rd Prize</p>
+                    </div>
+            </div>
+
+            <div ng-switch-when="2" class="animated zoomInDown leaders">
+                <h2 id="bottomDivHeading"> Current Leaders </h2>
+                    <div class="animated flash imageFiles">
+                        <img ng-src="{{gems[0].images}}"/></div>
+                    <div class="animated flash imageFiles">
+                        <img ng-src="{{gems[1].images}}"/></div>
+                    <div class="animated flash imageFiles">
+                        <img ng-src="{{gems[2].images}}"/></div>
+                    <div>
+                        <p id="position1">1st </p>
+                        <p id="position2">2nd </p>
+                        <p id="position3">3rd </p>
+                    </div>
+            </div>
+        </div>
+</div>
+
+
+

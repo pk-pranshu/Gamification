@@ -1,0 +1,11 @@
+<div ng-controller="secondPageCtrl" setbackground class="secondPage">
+    <h1 id="headerTitle" class="animated fadeInLeft">Leader Board</h1>
+    <div class="tableAnimation gems-list ng-cloak">
+        <div class="animate gem row" ng-repeat="item in gems " on-finish="moveTable()" ng-class="{ 'red': item.selected }">
+            <div class="col-md-4">{{$index +1}}</div>
+            <div class="col-md-4">{{item.name}}</div>
+            <div class="col-md-4">{{item.company}}</div>
+            <rep-details></rep-details>
+        </div>
+    </div>      
+</div>
